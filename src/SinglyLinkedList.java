@@ -13,4 +13,17 @@ public class SinglyLinkedList {
         }
         return (llist1 == null && llist2 == null) ? 1 :0;
     }
+
+    //It also can be done recursively
+    /*
+    public static int compareListsRecursively(SinglyLinkedListNode llist1,SinglyLinkedListNode llist2)
+    {
+        {
+            if (llist1 == null && llist2 == null) return 1;
+            else if (llist1 == null || llist2 == null) return 0;
+            else if (llist1.data != llist2.data) return 0;
+            else return compareLists(llist1, llist2);
+        }
+    }
+    */
     }
